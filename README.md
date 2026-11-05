@@ -1,4 +1,4 @@
-# SECDED-SRAM
+# 32-bit SECDED memory
 
 32-bit word memory with 7-bit SECDED error detection and correction.
 
