@@ -17,6 +17,6 @@ make synth
 
 Design sources are in `rtl/`, directed tests in `tb/`, and interface, architecture, testing and measured results in `docs/`.
 
-**Scope:** Memory macro inference and test coverage depend on target implementation and configuration.
+**Architecture:** SECDED-protected 32-bit scratchpad with read correction, status flags and fault injection.
 
 Project owner: Sundaram S S.

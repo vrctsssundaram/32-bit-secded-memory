@@ -11,10 +11,5 @@ Hosted generic synthesis: https://github.com/vrctsssundaram/Project-Repo-3/actio
 | Self-checking simulation | **PASS** (`vvp`, exit code 0) |
 | Directed checks | SECDED clean, single data, double data, parity and overall parity faults |
 | Generic Yosys synthesis | **PASS**; 3,537 technology-independent cells |
-| Device-specific FPGA/ASIC utilization | **Not measured** |
-| Static timing / Fmax | **Not measured** |
-| Power and hardware throughput | **Not measured** |
 
-The recorded checks apply to the named revision and exercise the bounded first implementation. No waveform image, fabricated timing report or estimated resource figure is presented as measured evidence.
-
-The generic cell count is obtained from the cited Yosys `stat` output and is not an FPGA LUT estimate, ASIC area, or a timing result.
+**Evidence:** Tool-reported Icarus Verilog regression and Yosys synthesis results for the source revision cited above.
