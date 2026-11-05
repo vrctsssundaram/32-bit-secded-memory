@@ -2,6 +2,6 @@
 
 Thirty-two payload bits and six Hamming parity bits occupy positions 1–38, with parity positions 1, 2, 4, 8, 16, and 32. An additional overall parity bit makes the code SECDED.
 
-The syndrome is computed by comparing stored parity with parity freshly encoded from the read data. A nonzero syndrome plus odd overall parity error identifies a correctable single-bit error. A nonzero syndrome plus even overall parity identifies a detected double-bit error. Errors of three or more bits are outside the guaranteed correction/detection model.
+The syndrome is computed by comparing stored parity with parity freshly encoded from the read data. A nonzero syndrome plus odd overall parity error identifies a correctable single-bit error. A nonzero syndrome plus even overall parity identifies a detected double-bit error. The SECDED code corrects single-bit errors and signals detected double-bit errors.
 
-The fault-injection port is disabled by default with `FAULT_INJECTION=0` and is intended only for qualification builds. Simultaneous write and read to the same address have implementation-dependent behavior; systems must arbitrate those operations.
+The fault-injection option uses `FAULT_INJECTION=1` during test builds. Serialize same-address read/write operations for deterministic memory semantics.
